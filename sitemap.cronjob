@@ -1,0 +1,13 @@
+30 19 * * 0 /usr/bin/php5 /var/www/bnbxtras/newmap.php
+35 19 * * 0 /bin/sh /var/www/bnbxtras/gruntTask.sh
+* * * * * /usr/bin/php5 /var/www/bnb-l/index.php automate email
+15 * * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate updateRankScores 1
+30 * * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate updateRankScores 0
+59 * * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate userRanks 1
+59 */1 * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate userRanks 0
+59 3 * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate storeSectionProductsCount
+10 4 * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate updateMultipliers 1
+20 4 * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate updateMultipliers 0
+*/20 * * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate updateCurators
+*/30 * * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate updateFollowFriends 1
+*/40 * * * * /usr/bin/php5 /var/www/bnb-l/index.php dbupdate updateFollowFriends 0
